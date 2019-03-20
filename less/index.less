@@ -58,3 +58,77 @@ html, body {
 }
 
 /* Tested Less, is working. Code starts here */
+
+
+@themColor: rgb(31, 29, 143);
+
+h3 {
+	font-size: 62px;
+	color: white;
+}
+
+.container {
+	width: 95%;
+	margin: auto;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:  space-between;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 70%;
+	margin: auto;
+
+	.infoBox {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		color: @themColor;
+		padding-top: 100px;
+
+			.name {
+				font-size: 40px;
+				padding-bottom: 7px;
+
+			}
+
+			.contact {
+				font-size: 14px;
+			}
+	}
+
+	.initialBox {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-content: center;
+		background-color: @themColor;
+		padding: 10%;
+	}
+
+}
+
+.mainContent {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:  space-between;
+	border: 1px solid red;
+
+		.leftBoxes {
+			.contact;
+			border: 1px solid red;
+		}
+
+		.rightBoxes {
+			.contact;
+			border: 1px solid green;
+		}
+
+}
+
+
+

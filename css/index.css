@@ -135,3 +135,43 @@ body {
   height: 100%;
 }
 /* Tested Less, is working. Code starts here */
+h3 {
+  font-size: 62px;
+  color: white;
+}
+.container {
+  width: 95%;
+  margin: auto;
+}
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 70%;
+  margin: auto;
+}
+header .infoBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #1f1d8f;
+  padding-top: 100px;
+}
+header .infoBox .name {
+  font-size: 40px;
+  padding-bottom: 7px;
+}
+header .infoBox .contact {
+  font-size: 14px;
+}
+header .initialBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  background-color: #1f1d8f;
+  padding: 10%;
+}

@@ -67,8 +67,12 @@ h3 {
 	color: white;
 }
 
+ul {
+	list-style-type: circle;
+}
+
 .container {
-	width: 95%;
+	width: 70%;
 	margin: auto;
 }
 
@@ -79,15 +83,16 @@ header {
 	justify-content:  space-between;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	width: 70%;
-	margin: auto;
+	width: 100%;
+	
 
 	.infoBox {
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
 		color: @themColor;
-		padding-top: 100px;
+		padding-top: 179px;
+		padding-left: 15%;
 
 			.name {
 				font-size: 40px;
@@ -111,22 +116,45 @@ header {
 
 }
 
+.flexc {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
 .mainContent {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
 	justify-content:  space-between;
-	border: 1px solid red;
 
 		.leftBoxes {
-			.contact;
-			border: 1px solid red;
+			.flexc;
+			color: @themColor;
+			width: 15%;
+			font-size: 30px;
+			background-color: lightslategray;
 		}
 
 		.rightBoxes {
-			.contact;
-			border: 1px solid green;
+			.flexc;
+			width: 85%;
+			
 		}
+
+	.objContent {
+		padding-top: 10px;
+		padding-bottom: 20px;
+
+	}
+
+	.sumContent {
+		.objContent;
+	}
+
+	.expContent{
+		.objContent
+	}
 
 }
 

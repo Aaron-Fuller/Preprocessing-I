@@ -57,3 +57,106 @@ html, body {
     height: 100%;
 }
 
+/* Tested Less, is working. Code starts here */
+
+
+@themColor: rgb(31, 29, 143);
+
+h3 {
+	font-size: 62px;
+	color: white;
+}
+
+ul {
+	list-style-type: circle;
+}
+
+.container {
+	width: 70%;
+	margin: auto;
+}
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:  space-between;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 100%;
+	
+
+	.infoBox {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		color: @themColor;
+		padding-top: 179px;
+		padding-left: 15%;
+
+			.name {
+				font-size: 40px;
+				padding-bottom: 7px;
+
+			}
+
+			.contact {
+				font-size: 14px;
+			}
+	}
+
+	.initialBox {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		align-content: center;
+		background-color: @themColor;
+		padding: 10%;
+	}
+
+}
+
+.flexc {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.mainContent {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:  space-between;
+
+		.leftBoxes {
+			.flexc;
+			color: @themColor;
+			width: 15%;
+			font-size: 30px;
+			background-color: lightslategray;
+		}
+
+		.rightBoxes {
+			.flexc;
+			width: 85%;
+			
+		}
+
+	.objContent {
+		padding-top: 10px;
+		padding-bottom: 20px;
+
+	}
+
+	.sumContent {
+		.objContent;
+	}
+
+	.expContent{
+		.objContent
+	}
+
+}
+
+
+
